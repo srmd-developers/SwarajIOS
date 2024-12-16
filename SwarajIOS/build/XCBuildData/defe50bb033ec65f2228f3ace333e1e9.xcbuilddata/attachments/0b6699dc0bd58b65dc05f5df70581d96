@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_searchSortDummyTestsVersionString[];
+ extern const double Pods_searchSortDummyTestsVersionNumber;
+
+ const unsigned char Pods_searchSortDummyTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_searchSortDummyTests  PROJECT:Pods-1" "\n";
+ const double Pods_searchSortDummyTestsVersionNumber __attribute__ ((used)) = (double)1.;

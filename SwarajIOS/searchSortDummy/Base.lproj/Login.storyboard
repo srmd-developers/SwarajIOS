@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="52w-K1-BNR">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="OgQ-dd-iu7">
+            <objects>
+                <viewController id="52w-K1-BNR" customClass="splashVC" customModule="searchSortDummy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Qp-Rs-R22"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dht-mb-EEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Huf-Rr-4Mu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="4LN-hO-iim" kind="presentation" identifier="toLogin" modalPresentationStyle="overFullScreen" id="y0b-6v-U75"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wxg-Ew-kfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1080" y="35"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="NqT-IS-BLi">
+            <objects>
+                <viewController storyboardIdentifier="login" id="4LN-hO-iim" customClass="LoginVC" customModule="searchSortDummy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3tV-KT-QZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="BKv-Mm-BuP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AvN-BH-hy7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seI-Op-hHr">
+                                <rect key="frame" x="16" y="301" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="MBM-rv-7Oq"/>
+                                </constraints>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bj-5k-68x">
+                                <rect key="frame" x="16" y="359" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c6g-Hy-jfw"/>
+                                </constraints>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwaRaj Kriya Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DP7-3c-kjI">
+                                <rect key="frame" x="0.0" y="40" width="320" height="230"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKs-ES-CyX">
+                                <rect key="frame" x="85" y="423" width="150" height="39"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.94901960784313721" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Ehk-iZ-Bu9"/>
+                                    <constraint firstAttribute="width" constant="150" id="Kdn-o3-6VB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <size key="titleShadowOffset" width="4" height="4"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.73075210492227982" green="0.64077966267056019" blue="0.40580225275472853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginAction:" destination="4LN-hO-iim" eventType="touchUpInside" id="DB9-hI-ic7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-ds-23u">
+                                <rect key="frame" x="264" y="368" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="BOo-D9-5Rh"/>
+                                    <constraint firstAttribute="height" constant="32" id="Czt-hs-C3Y"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="eye_hide"/>
+                                <connections>
+                                    <action selector="btnShowHidePasswordClicked:" destination="4LN-hO-iim" eventType="touchUpInside" id="lJc-S8-79Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wkb-ds-23u" firstAttribute="centerY" secondItem="5bj-5k-68x" secondAttribute="centerY" id="3oF-cY-GDf"/>
+                            <constraint firstItem="rKs-ES-CyX" firstAttribute="top" secondItem="5bj-5k-68x" secondAttribute="bottom" constant="14" id="635-tV-SQD"/>
+                            <constraint firstItem="DP7-3c-kjI" firstAttribute="top" secondItem="3tV-KT-QZW" secondAttribute="bottom" constant="20" id="CUz-Wk-tVO"/>
+                            <constraint firstItem="5bj-5k-68x" firstAttribute="top" secondItem="seI-Op-hHr" secondAttribute="bottom" constant="8" id="Czb-K7-T6b"/>
+                            <constraint firstAttribute="trailing" secondItem="5bj-5k-68x" secondAttribute="trailing" constant="16" id="Kka-nJ-gmP"/>
+                            <constraint firstItem="BKv-Mm-BuP" firstAttribute="top" secondItem="rKs-ES-CyX" secondAttribute="bottom" constant="18" id="Li3-le-4XE"/>
+                            <constraint firstItem="seI-Op-hHr" firstAttribute="leading" secondItem="AvN-BH-hy7" secondAttribute="leading" constant="16" id="SYs-k1-xfs"/>
+                            <constraint firstAttribute="trailing" secondItem="DP7-3c-kjI" secondAttribute="trailing" id="T5p-T1-zNe"/>
+                            <constraint firstAttribute="trailing" secondItem="seI-Op-hHr" secondAttribute="trailing" constant="16" id="V1n-AE-xsr"/>
+                            <constraint firstAttribute="trailing" secondItem="wkb-ds-23u" secondAttribute="trailing" constant="24" id="ZhT-vg-lcf"/>
+                            <constraint firstItem="DP7-3c-kjI" firstAttribute="leading" secondItem="AvN-BH-hy7" secondAttribute="leading" id="qDR-Xr-bIo"/>
+                            <constraint firstItem="seI-Op-hHr" firstAttribute="top" secondItem="DP7-3c-kjI" secondAttribute="bottom" constant="31" id="r4D-nE-XwA"/>
+                            <constraint firstItem="5bj-5k-68x" firstAttribute="leading" secondItem="AvN-BH-hy7" secondAttribute="leading" constant="16" id="r9Y-zA-nBD"/>
+                            <constraint firstItem="rKs-ES-CyX" firstAttribute="centerX" secondItem="AvN-BH-hy7" secondAttribute="centerX" id="tm6-eG-C0E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="rKs-ES-CyX" id="DK2-qj-H8h"/>
+                        <outlet property="btnShowHidePassword" destination="wkb-ds-23u" id="JO4-h2-3dT"/>
+                        <outlet property="txtPassword" destination="5bj-5k-68x" id="dJj-u7-y5L"/>
+                        <outlet property="txtUserID" destination="seI-Op-hHr" id="Ihg-r9-l8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThY-TO-ozB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SwaRaj Kriya Logo" width="1600" height="2532"/>
+        <image name="eye_hide" width="32" height="32"/>
+    </resources>
+</document>

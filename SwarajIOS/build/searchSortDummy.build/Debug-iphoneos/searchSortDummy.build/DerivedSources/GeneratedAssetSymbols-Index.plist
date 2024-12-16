@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEnergyPlayer</string>
+			<key>relativePath</key>
+			<string>./EnergyPlayer.imageset</string>
+			<key>swiftSymbol</key>
+			<string>energyPlayer</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIQButtonBarArrowDown</string>
+			<key>relativePath</key>
+			<string>./IQButtonBarArrowDown.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iqButtonBarArrowDown</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIQButtonBarArrowLeft</string>
+			<key>relativePath</key>
+			<string>./IQButtonBarArrowLeft.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iqButtonBarArrowLeft</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIQButtonBarArrowRight</string>
+			<key>relativePath</key>
+			<string>./IQButtonBarArrowRight.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iqButtonBarArrowRight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIQButtonBarArrowUp</string>
+			<key>relativePath</key>
+			<string>./IQButtonBarArrowUp.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iqButtonBarArrowUp</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSwaRajKriyaLogo</string>
+			<key>relativePath</key>
+			<string>./SwaRaj Kriya Logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>swaRajKriyaLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBackWhiteIcon</string>
+			<key>relativePath</key>
+			<string>./back-white-icon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>backWhiteIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBackWhite</string>
+			<key>relativePath</key>
+			<string>./back_white.imageset</string>
+			<key>swiftSymbol</key>
+			<string>backWhite</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBg1</string>
+			<key>relativePath</key>
+			<string>./bg1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bg1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBg2</string>
+			<key>relativePath</key>
+			<string>./bg2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bg2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBg3</string>
+			<key>relativePath</key>
+			<string>./bg3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bg3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBgShadow</string>
+			<key>relativePath</key>
+			<string>./Special Audio/bg_shadow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bgShadow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCircleMinus</string>
+			<key>relativePath</key>
+			<string>./circleMinus.imageset</string>
+			<key>swiftSymbol</key>
+			<string>circleMinus</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCirclePlus</string>
+			<key>relativePath</key>
+			<string>./circlePlus.imageset</string>
+			<key>swiftSymbol</key>
+			<string>circlePlus</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCloudIcon</string>
+			<key>relativePath</key>
+			<string>./cloud_icon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cloudIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDownArrow</string>
+			<key>relativePath</key>
+			<string>./down_arrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>downArrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDownload</string>
+			<key>relativePath</key>
+			<string>./download.imageset</string>
+			<key>swiftSymbol</key>
+			<string>download</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDp1</string>
+			<key>relativePath</key>
+			<string>./dp1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dp1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDp2</string>
+			<key>relativePath</key>
+			<string>./dp2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dp2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEyeHide</string>
+			<key>relativePath</key>
+			<string>./eye_hide.imageset</string>
+			<key>swiftSymbol</key>
+			<string>eyeHide</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEyeShow</string>
+			<key>relativePath</key>
+			<string>./eye_show.imageset</string>
+			<key>swiftSymbol</key>
+			<string>eyeShow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcPauseBlack36</string>
+			<key>relativePath</key>
+			<string>./Special Audio/ic_pause_black_36.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icPauseBlack36</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcPlayArrowBlack36</string>
+			<key>relativePath</key>
+			<string>./Special Audio/ic_play_arrow_black_36.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icPlayArrowBlack36</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcSkipNextWhite48</string>
+			<key>relativePath</key>
+			<string>./Special Audio/ic_skip_next_white_48.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icSkipNextWhite48</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcSkipPreviousWhite48</string>
+			<key>relativePath</key>
+			<string>./Special Audio/ic_skip_previous_white_48.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icSkipPreviousWhite48</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlacholderLogo</string>
+			<key>relativePath</key>
+			<string>./placholder_logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>placholderLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlay</string>
+			<key>relativePath</key>
+			<string>./play.imageset</string>
+			<key>swiftSymbol</key>
+			<string>play</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlayWhite</string>
+			<key>relativePath</key>
+			<string>./playWhite.imageset</string>
+			<key>swiftSymbol</key>
+			<string>playWhite</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlayWhiteO</string>
+			<key>relativePath</key>
+			<string>./playWhiteO.imageset</string>
+			<key>swiftSymbol</key>
+			<string>playWhiteO</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlayGreen</string>
+			<key>relativePath</key>
+			<string>./Special Audio/play_green.imageset</string>
+			<key>swiftSymbol</key>
+			<string>playGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProfile</string>
+			<key>relativePath</key>
+			<string>./profile.imageset</string>
+			<key>swiftSymbol</key>
+			<string>profile</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRiben</string>
+			<key>relativePath</key>
+			<string>./riben.imageset</string>
+			<key>swiftSymbol</key>
+			<string>riben</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRightArrow</string>
+			<key>relativePath</key>
+			<string>./right_arrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rightArrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSetting</string>
+			<key>relativePath</key>
+			<string>./setting.imageset</string>
+			<key>swiftSymbol</key>
+			<string>setting</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameStop</string>
+			<key>relativePath</key>
+			<string>./stop.imageset</string>
+			<key>swiftSymbol</key>
+			<string>stop</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameStopO</string>
+			<key>relativePath</key>
+			<string>./stopO.imageset</string>
+			<key>swiftSymbol</key>
+			<string>stopO</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameStopOrg</string>
+			<key>relativePath</key>
+			<string>./stopOrg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>stopOrg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTick</string>
+			<key>relativePath</key>
+			<string>./tick.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tick</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUampIcPauseWhite48</string>
+			<key>relativePath</key>
+			<string>./Special Audio/uamp_ic_pause_white_48.imageset</string>
+			<key>swiftSymbol</key>
+			<string>uampIcPauseWhite48</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUampIcPlayArrowWhite48</string>
+			<key>relativePath</key>
+			<string>./Special Audio/uamp_ic_play_arrow_white_48.imageset</string>
+			<key>swiftSymbol</key>
+			<string>uampIcPlayArrowWhite48</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/searchSortDummy/assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUpArrow</string>
+			<key>relativePath</key>
+			<string>./up_arrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upArrow</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

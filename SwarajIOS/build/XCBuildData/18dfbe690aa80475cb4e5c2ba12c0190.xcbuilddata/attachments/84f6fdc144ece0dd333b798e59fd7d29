@@ -1,0 +1,88 @@
+{
+  "" : {
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing-master.dia",
+    "emit-module-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing-master-emit-module.dia",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing-master.swiftdeps"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/Extensions.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/Extensions~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularProgressRing.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRing~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularProgressRingDelegate.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularProgressRingDelegate~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularRing.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRing~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularRingLayer.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingLayer~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularRingStyle.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingStyle~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularRingValueFormatter.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularRingValueFormatter~partial.swiftmodule"
+  },
+  "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/Pods/UICircularProgressRing/src/UICircularProgressRing/UICircularTimerRing.swift" : {
+    "const-values" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.d",
+    "diagnostics" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.o",
+    "llvm-bc" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.bc",
+    "object" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.o",
+    "swift-dependencies" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/app/latest_ios_sk/SRM-GIT 2/build/Pods.build/Debug-iphoneos/UICircularProgressRing.build/Objects-normal/arm64/UICircularTimerRing~partial.swiftmodule"
+  }
+}

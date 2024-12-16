@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'searchSortDummy' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  #pod 'FirebaseUI/Storage'
+pod 'UICircularProgressRing'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'SDWebImage'
+  # Pods for searchSortDummy
+
+  target 'searchSortDummyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'searchSortDummyUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

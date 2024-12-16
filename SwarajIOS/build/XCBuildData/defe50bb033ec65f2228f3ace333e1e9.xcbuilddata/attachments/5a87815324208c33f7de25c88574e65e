@@ -1,0 +1,6 @@
+framework module Pods_searchSortDummy {
+  umbrella header "Pods-searchSortDummy-umbrella.h"
+
+  export *
+  module * { export * }
+}
