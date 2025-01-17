@@ -8,7 +8,7 @@ class cfg : UIViewController {
     
 
     //Live
-    static var baseUrl = "https://app.swarajkriya.com/swaraj/"
+    static var baseUrl = "https://app.swarajkriya.com/swaraj-new/"
     static var url = "https://app.swarajkriya.com/swaraj/kavita1/"
     
     //Test1

@@ -1,0 +1,51 @@
+dependencies: \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/Pods.build/Debug-iphoneos/FirebaseInstallations.build/module.modulemap \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromises.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/Pods.build/Debug-iphoneos/PromisesObjC.build/module.modulemap \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/Target\ Support\ Files/PromisesObjC/PromisesObjC-umbrella.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+All.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromiseError.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Always.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Any.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Async.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Await.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Catch.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Delay.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Do.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Race.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Recover.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Reduce.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Retry.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Testing.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Then.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Timeout.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Validate.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Wrap.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponent.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRDependency.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLogger.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseCore/Extension/FIROptionsInternal.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.h \
+  /Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h

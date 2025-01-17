@@ -436,7 +436,7 @@ SWIFT_CLASS("_TtC22UICircularProgressRing22UICircularProgressRing")
 @property (nonatomic) IBInspectable CGFloat value;
 /// The minimum value for the progress ring. ex: (0) -> 100.
 /// <h2>Important</h2>
-/// Default = 100
+/// Default = 0.0
 /// Must be a non-negative value, the absolute value is taken when setting this property.
 /// The <code>value</code> of the progress ring must NOT fall below <code>minValue</code> if it does the <code>value</code> property is clamped
 /// and will be set equal to <code>value</code>, you will receive a warning message in the console.
@@ -446,7 +446,7 @@ SWIFT_CLASS("_TtC22UICircularProgressRing22UICircularProgressRing")
 @property (nonatomic) IBInspectable CGFloat minValue;
 /// The maximum value for the progress ring. ex: 0 -> (100)
 /// <h2>Important</h2>
-/// Default = 100
+/// Default = 100.0
 /// Must be a non-negative value, the absolute value is taken when setting this property.
 /// Unlike the <code>minValue</code> member <code>value</code> can extend beyond <code>maxValue</code>. What happens in this case
 /// is the inner ring will do an extra loop through the outer ring, this is not noticible however.

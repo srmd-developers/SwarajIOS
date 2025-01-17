@@ -145,8 +145,16 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
     }
     
     @IBAction func btnSK1Action(_ sender: Any) {
-        playerVC.fileName = cfg.SK1FileName
-        
+         var modifiedTargetWeeklyCount = 0;
+        if(cfg.weekSK1T == 6){
+                modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
+        }else if(cfg.weekSK1T == 3){
+                modifiedTargetWeeklyCount = cfg.weekSK1T + 1 - cfg.weekSK1
+        }
+        if(modifiedTargetWeeklyCount <= 0){
+            alertDialog(header: "Alert", msg: "Target achieved, Come back next week.");
+                return;
+        } else {
 //        if (cfg.weekSK1T + 1 - cfg.weekSK1 <= 0) {
 //            
 //            //let b = String(describing: cfg.weekSK1);
@@ -180,7 +188,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
                     
                 }
             }
-//        }
+       }//end of else
     }
     
     @IBAction func btnSK2Action(_ sender: Any) {
@@ -218,33 +226,42 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
     
     @IBAction func btnErgAction(_ sender: UIButton) {
         playerVC.fileName = cfg.SK4FileName//cfg.SK3FileName
-        
-        let currentRoute = AVAudioSession.sharedInstance().currentRoute
-        for description in currentRoute.outputs {
-            if convertFromAVAudioSessionPort(description.portType) == convertFromAVAudioSessionPort(AVAudioSession.Port.headphones) {
-                debugPrint("headphone plugged in")
-                if imgView3.image == #imageLiteral(resourceName: "play")
-                {
-                    alertAirplaneModeDialog2Btns() {
-                        self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
-                    }
-                }
-                else{
-                    checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
-                }
-            } else {
-                if imgView3.image == #imageLiteral(resourceName: "play")
-                {
-                    self.alertNoEarphoneConnectedDialog2Btns() {
-                        self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
-                    }
-                    
-                }else{
-                    self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
-                }
-            }
-        }
-        
+        var modifiedTargetWeeklyCount = 0;
+       if(cfg.weekSK1T == 6){
+               modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
+       }else if(cfg.weekSK1T == 3){
+               modifiedTargetWeeklyCount = cfg.weekSK1T + 1 - cfg.weekSK1
+       }
+       if(modifiedTargetWeeklyCount <= 0){
+           alertDialog(header: "Alert", msg: "Target achieved, Come back next week.");
+               return;
+       } else {
+           let currentRoute = AVAudioSession.sharedInstance().currentRoute
+           for description in currentRoute.outputs {
+               if convertFromAVAudioSessionPort(description.portType) == convertFromAVAudioSessionPort(AVAudioSession.Port.headphones) {
+                   debugPrint("headphone plugged in")
+                   if imgView3.image == #imageLiteral(resourceName: "play")
+                   {
+                       alertAirplaneModeDialog2Btns() {
+                           self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
+                       }
+                   }
+                   else{
+                       checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
+                   }
+               } else {
+                   if imgView3.image == #imageLiteral(resourceName: "play")
+                   {
+                       self.alertNoEarphoneConnectedDialog2Btns() {
+                           self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
+                       }
+                       
+                   }else{
+                       self.checkFile(fileName: playerVC.fileName, imgVew: self.imgView3)
+                   }
+               }
+           }
+       }
     }
     
     
@@ -373,7 +390,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
                 PR_sk1.font = UIFont.systemFont(ofSize: 14)
                 imgVew.addSubview(PR_sk1)
 //                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya6.mp3"//For 2021
-                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya7_2023.mp3"//For 2021
+                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya8_2024.mp3"//For 2021
                 
                 break
             case cfg.SK2FileName :
@@ -387,7 +404,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
                 PR_eng = progressRing
                 PR_eng.font = UIFont.systemFont(ofSize: 14)
                 imgVew.addSubview(PR_eng)
-                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya7_2023_extended.mp3"//For 2021
+                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya8_2024_extended.mp3"//For 2021
                 
                 break
                 
@@ -395,7 +412,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
                 PR_sk4 = progressRing
                 PR_sk4.font = UIFont.systemFont(ofSize: 14)
                 imgVew.addSubview(PR_sk4)
-                urlStr = "\(cfg.baseUrl)audio/BreathingMusic.mp3"//For 2023
+                urlStr = "\(cfg.baseUrl)audio/SwaRajKriya8_2024_extended.mp3"//For 2024
 
                 break
 

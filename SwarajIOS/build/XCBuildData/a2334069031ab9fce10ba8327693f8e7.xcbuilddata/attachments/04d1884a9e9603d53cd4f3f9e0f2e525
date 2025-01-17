@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests-master.dia",
+    "emit-module-dependencies" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests-master.swiftdeps"
+  },
+  "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/searchSortDummyUITests/searchSortDummyUITests.swift" : {
+    "const-values" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.swiftconstvalues",
+    "dependencies" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.d",
+    "diagnostics" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.dia",
+    "index-unit-output-path" : "/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.o",
+    "llvm-bc" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.bc",
+    "object" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.o",
+    "swift-dependencies" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests.swiftdeps",
+    "swiftmodule" : "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummyUITests.build/Objects-normal/arm64/searchSortDummyUITests~partial.swiftmodule"
+  }
+}

@@ -16,9 +16,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GoogleDataTransport/GDTCOREventTransformer.h>
+#import "GDTCOREventTransformer.h"
+#import "GDTCORTargets.h"
 
 @class GDTCOREvent;
+@class GDTCORProductData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable instancetype)initWithMappingID:(NSString *)mappingID
                               transformers:
                                   (nullable NSArray<id<GDTCOREventTransformer>> *)transformers
-                                    target:(NSInteger)target NS_DESIGNATED_INITIALIZER;
+                                    target:(GDTCORTarget)target NS_DESIGNATED_INITIALIZER;
 
 /** Copies and sends an internal telemetry event. Events sent using this API are lower in priority,
  * and sometimes won't be sent on their own.
@@ -85,6 +87,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @return An event that is suited for use by this transport.
  */
 - (GDTCOREvent *)eventForTransport;
+
+/**
+ * Creates an event with the given product data for use by this transport.
+ *
+ * @param productData The given product data to associate with the created event.
+ * @return An event that is suited for use by this transport.
+ */
+- (GDTCOREvent *)eventForTransportWithProductData:(nonnull GDTCORProductData *)productData;
 
 @end
 

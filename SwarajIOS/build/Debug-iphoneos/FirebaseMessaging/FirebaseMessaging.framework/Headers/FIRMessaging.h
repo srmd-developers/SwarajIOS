@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 typedef void (^FIRMessagingFCMTokenFetchCompletion)(NSString *_Nullable FCMToken,
                                                     NSError *_Nullable error)
-    NS_SWIFT_NAME(MessagingFCMTokenFetchCompletion);
+    NS_SWIFT_UNAVAILABLE("Use Swift's closure syntax instead.");
 
 /**
  *  @related FIRMessaging
@@ -44,7 +44,7 @@ typedef void (^FIRMessagingFCMTokenFetchCompletion)(NSString *_Nullable FCMToken
  *               will match a value from the FIRMessagingError enumeration.
  */
 typedef void (^FIRMessagingDeleteFCMTokenCompletion)(NSError *_Nullable error)
-    NS_SWIFT_NAME(MessagingDeleteFCMTokenCompletion);
+    NS_SWIFT_UNAVAILABLE("Use Swift's closure syntax instead.");
 
 /**
  *  Callback to invoke once the HTTP call to FIRMessaging backend for updating
@@ -54,125 +54,51 @@ typedef void (^FIRMessagingDeleteFCMTokenCompletion)(NSError *_Nullable error)
  *                on the FIRMessaging server. This will be nil in case the operation
  *                was successful, or if the operation was cancelled.
  */
-typedef void (^FIRMessagingTopicOperationCompletion)(NSError *_Nullable error);
-
-#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-/**
- *  Notification sent when the upstream message has been delivered
- *  successfully to the server. The notification object will be the messageID
- *  of the successfully delivered message.
- */
-FOUNDATION_EXPORT const NSNotificationName FIRMessagingSendSuccessNotification
-    NS_SWIFT_NAME(MessagingSendSuccess) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when the upstream message was failed to be sent to the
- *  server.  The notification object will be the messageID of the failed
- *  message. The userInfo dictionary will contain the relevant error
- *  information for the failure.
- */
-FOUNDATION_EXPORT const NSNotificationName FIRMessagingSendErrorNotification
-    NS_SWIFT_NAME(MessagingSendError) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when the Firebase messaging server deletes pending
- *  messages due to exceeded storage limits. This may occur, for example, when
- *  the device cannot be reached for an extended period of time.
- *
- *  It is recommended to retrieve any missing messages directly from the
- *  server.
- */
-FOUNDATION_EXPORT const NSNotificationName FIRMessagingMessagesDeletedNotification
-    NS_SWIFT_NAME(MessagingMessagesDeleted) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when Firebase Messaging establishes or disconnects from
- *  an FCM socket connection. You can query the connection state in this
- *  notification by checking the `isDirectChannelEstablished` property of FIRMessaging.
- */
-FOUNDATION_EXPORT const NSNotificationName FIRMessagingConnectionStateChangedNotification
-    NS_SWIFT_NAME(MessagingConnectionStateChanged) DEPRECATED_ATTRIBUTE;
+typedef void (^FIRMessagingTopicOperationCompletion)(NSError *_Nullable error)
+    NS_SWIFT_UNAVAILABLE("Use Swift's closure syntax instead.");
 
 /**
  *  Notification sent when the FCM registration token has been refreshed. Please use the
  *  FIRMessaging delegate method `messaging:didReceiveRegistrationToken:` to receive current and
  *  updated tokens.
  */
+// clang-format off
+// clang-format12 merges the next two lines.
 FOUNDATION_EXPORT const NSNotificationName FIRMessagingRegistrationTokenRefreshedNotification
     NS_SWIFT_NAME(MessagingRegistrationTokenRefreshed);
-#else
-/**
- *  Notification sent when the upstream message has been delivered
- *  successfully to the server. The notification object will be the messageID
- *  of the successfully delivered message.
- */
-FOUNDATION_EXPORT NSString *const FIRMessagingSendSuccessNotification
-    NS_SWIFT_NAME(MessagingSendSuccessNotification) DEPRECATED_ATTRIBUTE;
+// clang-format on
 
 /**
- *  Notification sent when the upstream message was failed to be sent to the
- *  server.  The notification object will be the messageID of the failed
- *  message. The userInfo dictionary will contain the relevant error
- *  information for the failure.
+ * The domain used for all errors in Messaging.
  */
-FOUNDATION_EXPORT NSString *const FIRMessagingSendErrorNotification
-    NS_SWIFT_NAME(MessagingSendErrorNotification) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when the Firebase messaging server deletes pending
- *  messages due to exceeded storage limits. This may occur, for example, when
- *  the device cannot be reached for an extended period of time.
- *
- *  It is recommended to retrieve any missing messages directly from the
- *  server.
- */
-FOUNDATION_EXPORT NSString *const FIRMessagingMessagesDeletedNotification
-    NS_SWIFT_NAME(MessagingMessagesDeletedNotification) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when Firebase Messaging establishes or disconnects from
- *  an FCM socket connection. You can query the connection state in this
- *  notification by checking the `isDirectChannelEstablished` property of FIRMessaging.
- */
-FOUNDATION_EXPORT NSString *const FIRMessagingConnectionStateChangedNotification
-    NS_SWIFT_NAME(MessagingConnectionStateChangedNotification) DEPRECATED_ATTRIBUTE;
-
-/**
- *  Notification sent when the FCM registration token has been refreshed. Please use the
- *  FIRMessaging delegate method `messaging:didReceiveRegistrationToken:` to receive current and
- *  updated tokens.
- */
-FOUNDATION_EXPORT NSString *const FIRMessagingRegistrationTokenRefreshedNotification
-    NS_SWIFT_NAME(MessagingRegistrationTokenRefreshedNotification);
-#endif  // defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-
+FOUNDATION_EXPORT NSString *const FIRMessagingErrorDomain NS_SWIFT_NAME(MessagingErrorDomain);
 /**
  *  @enum FIRMessagingError
  */
-typedef NS_ENUM(NSUInteger, FIRMessagingError) {
-  /// Unknown error.
-  FIRMessagingErrorUnknown = 0,
+typedef NS_ERROR_ENUM(FIRMessagingErrorDomain, FIRMessagingError){
+    /// Unknown error.
+    FIRMessagingErrorUnknown = 0,
 
-  /// FIRMessaging couldn't validate request from this client.
-  FIRMessagingErrorAuthentication = 1,
+    /// FIRMessaging couldn't validate request from this client.
+    FIRMessagingErrorAuthentication = 1,
 
-  /// InstanceID service cannot be accessed.
-  FIRMessagingErrorNoAccess = 2,
+    /// InstanceID service cannot be accessed.
+    FIRMessagingErrorNoAccess = 2,
 
-  /// Request to InstanceID backend timed out.
-  FIRMessagingErrorTimeout = 3,
+    /// Request to InstanceID backend timed out.
+    FIRMessagingErrorTimeout = 3,
 
-  /// No network available to reach the servers.
-  FIRMessagingErrorNetwork = 4,
+    /// No network available to reach the servers.
+    FIRMessagingErrorNetwork = 4,
 
-  /// Another similar operation in progress, bailing this one.
-  FIRMessagingErrorOperationInProgress = 5,
+    /// Another similar operation in progress, bailing this one.
+    FIRMessagingErrorOperationInProgress = 5,
 
-  /// Some parameters of the request were invalid.
-  FIRMessagingErrorInvalidRequest = 7,
+    /// Some parameters of the request were invalid.
+    FIRMessagingErrorInvalidRequest = 7,
 
-  /// Topic name is invalid for subscription/unsubscription.
-  FIRMessagingErrorInvalidTopicName = 8,
+    /// Topic name is invalid for subscription/unsubscription.
+    FIRMessagingErrorInvalidTopicName = 8,
 
 } NS_SWIFT_NAME(MessagingError);
 
@@ -185,7 +111,7 @@ typedef NS_ENUM(NSInteger, FIRMessagingMessageStatus) {
 } NS_SWIFT_NAME(MessagingMessageStatus);
 
 /**
- *  The APNS token type for the app. If the token type is set to `UNKNOWN`
+ *  The APNs token type for the app. If the token type is set to `UNKNOWN`
  *  Firebase Messaging will implicitly try to figure out what the actual token type
  *  is from the provisioning profile.
  *  Unless you really need to specify the type, you should use the `APNSToken`
@@ -209,24 +135,6 @@ NS_SWIFT_NAME(MessagingMessageInfo)
 
 @end
 
-/**
- * A remote data message received by the app via FCM (not just the APNs interface).
- *
- * This is only for devices running iOS 10 or above. To support devices running iOS 9 or below, use
- * the local and remote notifications handlers defined in UIApplicationDelegate protocol.
- */
-NS_SWIFT_NAME(MessagingRemoteMessage)
-__deprecated_msg(
-    "FCM direct channel is deprecated, please use APNs for downstream message handling.")
-    @interface FIRMessagingRemoteMessage : NSObject
-
-/// The message ID of downstream message.
-@property(nonatomic, readonly, copy) NSString *messageID DEPRECATED_ATTRIBUTE;
-/// The downstream message received by the application.
-@property(nonatomic, readonly, strong) NSDictionary *appData DEPRECATED_ATTRIBUTE;
-
-@end
-
 @class FIRMessaging;
 @class FIRMessagingExtensionHelper;
 
@@ -246,25 +154,20 @@ NS_SWIFT_NAME(MessagingDelegate)
 ///
 /// * Subscribing to any topics.
 - (void)messaging:(FIRMessaging *)messaging
-    didReceiveRegistrationToken:(NSString *)fcmToken
+    didReceiveRegistrationToken:(nullable NSString *)fcmToken
     NS_SWIFT_NAME(messaging(_:didReceiveRegistrationToken:));
-
-/// Handle data messages received via FCM direct channel (not via APNS).
-- (void)messaging:(FIRMessaging *)messaging
-    didReceiveMessage:(FIRMessagingRemoteMessage *)remoteMessage
-    NS_SWIFT_NAME(messaging(_:didReceive:))__deprecated_msg(
-        "FCM direct channel is deprecated, please use APNs for downstream message handling.");
 @end
 
 /**
  *  Firebase Messaging lets you reliably deliver messages at no cost.
  *
  *  To send or receive messages, the app must get a
- *  registration token from FIRInstanceID. This token authorizes an
+ *  registration token. This token authorizes an
  *  app server to send messages to an app instance.
  *
- *  In order to receive FIRMessaging messages, declare
- *  `application:didReceiveRemoteNotification::fetchCompletionHandler:`.
+ *  In order to handle incoming Messaging messages, set the
+ *  `UNUserNotificationCenter`'s `delegate` property
+ *  and implement the appropriate methods.
  */
 NS_SWIFT_NAME(Messaging)
 @interface FIRMessaging : NSObject
@@ -275,35 +178,19 @@ NS_SWIFT_NAME(Messaging)
 @property(nonatomic, weak, nullable) id<FIRMessagingDelegate> delegate;
 
 /**
- *  When set to `YES`, Firebase Messaging will automatically establish a socket-based, direct
- *  channel to the FCM server. Enable this only if you are sending upstream messages or
- *  receiving non-APNS, data-only messages in foregrounded apps.
- *  Default is `NO`.
- */
-@property(nonatomic) BOOL shouldEstablishDirectChannel DEPRECATED_MSG_ATTRIBUTE(
-    "FCM direct channel is deprecated, please use APNs channel for downstream message delivery.");
-
-/**
- *  Returns `YES` if the direct channel to the FCM server is active, and `NO` otherwise.
- */
-@property(nonatomic, readonly) BOOL isDirectChannelEstablished DEPRECATED_MSG_ATTRIBUTE(
-    "FCM direct channel is deprecated, please use APNs channel for downstream message delivery.");
-
-/**
  *  FIRMessaging
  *
- *  @return An instance of FIRMessaging.
+ *  @return An instance of Messaging.
  */
 + (instancetype)messaging NS_SWIFT_NAME(messaging());
 
 /**
- * FIRMessagingExtensionHelper
+ * Use the MessagingExtensionHelper to populate rich UI content for your notifications.
+ * For example, if an image URL is set in your notification payload or on the console,
+ * you can use the MessagingExtensionHelper instance returned from this method to render
+ * the image in your notification.
  *
- * Use FIRMessagingExtensionHelper to populate rich UI contents for your notifications.
- * e.g. If an image URL is set in your notification payload or on the console, call
- * FIRMessagingExtensionHelper API to render it on your notification.
- *
- * @return An instance of FIRMessagingExtensionHelper that handles the extensions API.
+ * @return An instance of MessagingExtensionHelper that handles the extensions API.
  */
 + (FIRMessagingExtensionHelper *)extensionHelper NS_SWIFT_NAME(serviceExtension())
     NS_AVAILABLE(10.14, 10.0);
@@ -313,32 +200,32 @@ NS_SWIFT_NAME(Messaging)
  */
 - (instancetype)init __attribute__((unavailable("Use +messaging instead.")));
 
-#pragma mark - APNS
+#pragma mark - APNs
 
 /**
- *  This property is used to set the APNS Token received by the application delegate.
+ *  This property is used to set the APNs Token received by the application delegate.
  *
- *  FIRMessaging uses method swizzling to ensure that the APNS token is set
+ *  Messaging uses method swizzling to ensure that the APNs token is set
  *  automatically. However, if you have disabled swizzling by setting
  *  `FirebaseAppDelegateProxyEnabled` to `NO` in your app's
- *  Info.plist, you should manually set the APNS token in your application
- *  delegate's `-application:didRegisterForRemoteNotificationsWithDeviceToken:`
+ *  Info.plist, you should manually set the APNs token in your application
+ *  delegate's `application(_:didRegisterForRemoteNotificationsWithDeviceToken:)`
  *  method.
  *
- *  If you would like to set the type of the APNS token, rather than relying on
- *  automatic detection, see: `-setAPNSToken:type:`.
+ *  If you would like to set the type of the APNs token, rather than relying on
+ *  automatic detection, see `setAPNSToken(_:type:)`.
  */
 @property(nonatomic, copy, nullable) NSData *APNSToken NS_SWIFT_NAME(apnsToken);
 
 /**
- *  Set APNS token for the application. This APNS token will be used to register
- *  with Firebase Messaging using `FCMToken` or
- *  `tokenWithAuthorizedEntity:scope:options:handler`.
+ *  Set the APNs token for the application. This token will be used to register
+ *  with Firebase Messaging, and will be associated with the app's installation ID
+ *  in the form of an FCM token.
  *
- *  @param apnsToken The APNS token for the application.
- *  @param type  The type of APNS token. Debug builds should use
- *  FIRMessagingAPNSTokenTypeSandbox. Alternatively, you can supply
- *  FIRMessagingAPNSTokenTypeUnknown to have the type automatically
+ *  @param apnsToken The APNs token for the application.
+ *  @param type The type of APNs token. Debug builds should use
+ *  `MessagingAPNSTokenTypeSandbox`. Alternatively, you can supply
+ *  `MessagingAPNSTokenTypeUnknown` to have the type automatically
  *  detected based on your provisioning profile.
  */
 - (void)setAPNSToken:(NSData *)apnsToken type:(FIRMessagingAPNSTokenType)type;
@@ -346,38 +233,62 @@ NS_SWIFT_NAME(Messaging)
 #pragma mark - FCM Tokens
 
 /**
- * Is Firebase Messaging token auto generation enabled?  If this flag is disabled,
- * Firebase Messaging will not generate token automatically for message delivery.
+ * Is Firebase Messaging token auto generation enabled? If this flag is disabled, Firebase
+ * Messaging will not generate an FCM token automatically for message delivery.
  *
  * If this flag is disabled, Firebase Messaging does not generate new tokens automatically for
  * message delivery. If this flag is enabled, FCM generates a registration token on application
- * start when there is no existing valid token. FCM also generates a new token when an existing
- * token is deleted.
+ * start when there is no existing valid token and periodically refreshes the token and sends
+ * data to the Firebase backend.
  *
- * This setting is persisted, and is applied on future
- * invocations of your application.  Once explicitly set, it overrides any
- * settings in your Info.plist.
+ * This setting is persisted, and is applied on future invocations of your application. Once
+ * explicitly set, it overrides any settings in your Info.plist.
  *
  * By default, FCM automatic initialization is enabled.  If you need to change the
- * default (for example, because you want to prompt the user before getting token)
- * set FirebaseMessagingAutoInitEnabled to false in your application's Info.plist.
+ * default (for example, because you want to prompt the user before getting a token),
+ * set `FirebaseMessagingAutoInitEnabled` to NO in your application's Info.plist.
  */
 @property(nonatomic, assign, getter=isAutoInitEnabled) BOOL autoInitEnabled;
 
 /**
- *  The FCM token is used to identify this device so that FCM can send notifications to it.
- *  It is associated with your APNS token when the APNS token is supplied, so that sending
- *  messages to the FCM token will be delivered over APNS.
+ * The FCM registration token is used to identify this device so that FCM can send notifications to
+ * it. It is associated with your APNs token when the APNs token is supplied, so messages sent to
+ * the FCM token will be delivered over APNs.
  *
- *  The FCM token is sometimes refreshed automatically. In your FIRMessaging delegate, the
- *  delegate method `messaging:didReceiveRegistrationToken:` will be called once a token is
- *  available, or has been refreshed. Typically it should be called once per app start, but
- *  may be called more often, if token is invalidated or updated.
+ * The FCM registration token is sometimes refreshed automatically. In your Messaging delegate,
+ * the delegate method `messaging(_:didReceiveRegistrationToken:)` will be called once a token is
+ * available, or has been refreshed. Typically it should be called once per app start, but
+ * may be called more often if the token is invalidated or updated.
  *
- *  Once you have an FCM token, you should send it to your application server, so it can use
- *  the FCM token to send notifications to your device.
+ * Once you have an FCM registration token, you should send it to your application server, where
+ * it can be used to send notifications to your device.
  */
 @property(nonatomic, readonly, nullable) NSString *FCMToken NS_SWIFT_NAME(fcmToken);
+
+/**
+ * Asynchronously gets the default FCM registration token.
+ *
+ * This creates a Firebase Installations ID, if one does not exist, and sends information about the
+ * application and the device to the Firebase backend. A network connection is required for the
+ * method to succeed. To stop this, see `Messaging.isAutoInitEnabled`,
+ * `Messaging.delete(completion:)` and `Installations.delete(completion:)`.
+ *
+ * @param completion The completion handler to handle the token request.
+ */
+
+- (void)tokenWithCompletion:(void (^)(NSString *_Nullable token,
+                                      NSError *_Nullable error))completion;
+
+/**
+ * Asynchronously deletes the default FCM registration token.
+ *
+ * This does not delete all tokens for non-default sender IDs, See `Messaging.delete(completion:)`
+ * for deleting all of them. To prevent token auto generation, see `Messaging.isAutoInitEnabled`.
+ *
+ * @param completion The completion handler to handle the token deletion.
+ */
+
+- (void)deleteTokenWithCompletion:(void (^)(NSError *_Nullable error))completion;
 
 /**
  *  Retrieves an FCM registration token for a particular Sender ID. This can be used to allow
@@ -386,67 +297,73 @@ NS_SWIFT_NAME(Messaging)
  *  give to a different sender. Both tokens will deliver notifications to your device, and you
  *  can revoke a token when you need to.
  *
- *  This registration token is not cached by FIRMessaging. FIRMessaging should have an APNS
- *  token set before calling this to ensure that notifications can be delivered via APNS using
- *  this FCM token. You may re-retrieve the FCM token once you have the APNS token set, to
+ *  This registration token is not cached by FIRMessaging. FIRMessaging should have an APNs
+ *  token set before calling this to ensure that notifications can be delivered via APNs using
+ *  this FCM token. You may re-retrieve the FCM token once you have the APNs token set, to
  *  associate it with the FCM token. The default FCM token is automatically associated with
- *  the APNS token, if the APNS token data is available.
+ *  the APNs token, if the APNs token data is available.
+ *
+ *  This creates a Firebase Installations ID, if one does not exist, and sends information
+ *  about the application and the device to the Firebase backend.
  *
  *  @param senderID The Sender ID for a particular Firebase project.
  *  @param completion The completion handler to handle the token request.
  */
 - (void)retrieveFCMTokenForSenderID:(NSString *)senderID
-                         completion:(FIRMessagingFCMTokenFetchCompletion)completion
+                         completion:(void (^)(NSString *_Nullable FCMToken,
+                                              NSError *_Nullable error))completion
     NS_SWIFT_NAME(retrieveFCMToken(forSenderID:completion:));
 
 /**
- *  Invalidates an FCM token for a particular Sender ID. That Sender ID cannot no longer send
- *  notifications to that FCM token.
+ * Invalidates an FCM token for a particular Sender ID. That Sender ID cannot no longer send
+ * notifications to that FCM token. This does not delete the Firebase Installations ID that may have
+ * been created when generating the token. See `Installations.delete(completion:)`.
  *
- *  @param senderID The senderID for a particular Firebase project.
- *  @param completion The completion handler to handle the token deletion.
+ * @param senderID The senderID for a particular Firebase project.
+ * @param completion The completion handler to handle the token deletion.
  */
 - (void)deleteFCMTokenForSenderID:(NSString *)senderID
-                       completion:(FIRMessagingDeleteFCMTokenCompletion)completion
+                       completion:(void (^)(NSError *_Nullable error))completion
     NS_SWIFT_NAME(deleteFCMToken(forSenderID:completion:));
 
 #pragma mark - Topics
 
 /**
- *  Asynchronously subscribes to a topic. This uses a FCM Token to identify
- *  the app instance and periodically sends data to the Firebase backend. To stop this, see
- *  `[FIRInstanceID deleteIDWithHandler:]`.
+ * Asynchronously subscribes to a topic. This uses the default FCM registration token to identify
+ * the app instance and periodically sends data to the Firebase backend. To stop this, see
+ * `Messaging.delete(completion:)` and `Installations.delete(completion:)`.
  *
- *  @param topic The name of the topic, for example, @"sports".
+ * @param topic The name of the topic, for example, @"sports".
  */
 - (void)subscribeToTopic:(NSString *)topic NS_SWIFT_NAME(subscribe(toTopic:));
 
 /**
- *  Asynchronously subscribe to the provided topic, retrying on failure. This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ * Asynchronously subscribe to the provided topic, retrying on failure. This uses the default FCM
+ * registration token to identify the app instance and periodically sends data to the Firebase
+ * backend. To stop this, see `Messaging.delete(completion:)` and
+ * `Installations.delete(completion:)`.
  *
- *  @param topic       The topic name to subscribe to, for example, @"sports".
- *  @param completion  The completion that is invoked once the subscribe call ends.
- *                     In case of success, nil error is returned. Otherwise, an
- *                     appropriate error object is returned.
+ * @param topic       The topic name to subscribe to, for example, @"sports".
+ * @param completion  The completion that is invoked once the subscribe call ends.
+ *                    On success, the error parameter is always `nil`. Otherwise, an
+ *                    appropriate error object is returned.
  */
 - (void)subscribeToTopic:(nonnull NSString *)topic
-              completion:(nullable FIRMessagingTopicOperationCompletion)completion;
+              completion:(void (^_Nullable)(NSError *_Nullable error))completion;
 
 /**
- *  Asynchronously unsubscribe from a topic.  This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ * Asynchronously unsubscribe from a topic.  This uses a FCM Token
+ * to identify the app instance and periodically sends data to the Firebase backend. To stop this,
+ * see `Messaging.delete(completion:)` and `Installations.delete(completion:)`.
  *
- *  @param topic The name of the topic, for example @"sports".
+ * @param topic The name of the topic, for example @"sports".
  */
 - (void)unsubscribeFromTopic:(NSString *)topic NS_SWIFT_NAME(unsubscribe(fromTopic:));
 
 /**
- *  Asynchronously unsubscribe from the provided topic, retrying on failure. This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ * Asynchronously unsubscribe from the provided topic, retrying on failure. This uses a FCM Token
+ * to identify the app instance and periodically sends data to the Firebase backend. To stop this,
+ * see `Messaging.delete(completion:)` and `Installations.delete(completion:)`.
  *
  *  @param topic       The topic name to unsubscribe from, for example @"sports".
  *  @param completion  The completion that is invoked once the unsubscribe call ends.
@@ -454,39 +371,7 @@ NS_SWIFT_NAME(Messaging)
  *                     appropriate error object is returned.
  */
 - (void)unsubscribeFromTopic:(nonnull NSString *)topic
-                  completion:(nullable FIRMessagingTopicOperationCompletion)completion;
-
-#pragma mark - Upstream
-
-/**
- *  Sends an upstream ("device to cloud") message.
- *
- *  The message is queued if we don't have an active connection.
- *  You can only use the upstream feature if your FCM implementation
- *  uses the XMPP server protocol.
- *
- *  @param message      Key/Value pairs to be sent. Values must be String, any
- *                      other type will be ignored.
- *  @param receiver     A string identifying the receiver of the message. For FCM
- *                      project IDs the value is `SENDER_ID@gcm.googleapis.com`.
- *  @param messageID    The ID of the message. This is generated by the application. It
- *                      must be unique for each message generated by this application.
- *                      It allows error callbacks and debugging, to uniquely identify
- *                      each message.
- *  @param ttl          The time to live for the message. In case we aren't able to
- *                      send the message before the TTL expires we will send you a
- *                      callback. If 0, we'll attempt to send immediately and return
- *                      an error if we're not connected.  Otherwise, the message will
- *                      be queued.  As for server-side messages, we don't return an error
- *                      if the message has been dropped because of TTL; this can happen
- *                      on the server side, and it would require extra communication.
- */
-- (void)sendMessage:(NSDictionary *)message
-                 to:(NSString *)receiver
-      withMessageID:(NSString *)messageID
-         timeToLive:(int64_t)ttl
-    __deprecated_msg("Upstream messaging through direct channel is deprecated. For realtime "
-                     "updates, use Cloud Firestore, Realtime Database, or other services. ");
+                  completion:(void (^_Nullable)(NSError *_Nullable error))completion;
 
 #pragma mark - Analytics
 
@@ -502,6 +387,19 @@ NS_SWIFT_NAME(Messaging)
  *  @return Information about the downstream message.
  */
 - (FIRMessagingMessageInfo *)appDidReceiveMessage:(NSDictionary *)message;
+
+#pragma mark - GDPR
+/**
+ * Deletes all the tokens and checkin data of the Firebase project and related data on the server
+ * side. A network connection is required for the method to succeed.
+ *
+ * This does not delete the Firebase Installations ID. See `Installations.delete(completion:)`.
+ * To prevent token auto generation, see `Messaging.isAutoInitEnabled`.
+ *
+ * @param completion A completion handler which is invoked when the operation completes. `error ==
+ * nil` indicates success.
+ */
+- (void)deleteDataWithCompletion:(void (^)(NSError *__nullable error))completion;
 
 @end
 

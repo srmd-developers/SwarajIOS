@@ -129,7 +129,7 @@ class playerVC: UIViewController, AVAudioPlayerDelegate {
             btnPlay.setImage(#imageLiteral(resourceName: "playWhite"), for: .normal)
             lblPlayPause.text = "Play"
             isIntrupt = true
-            if timeInMin < 23/*Minutes*/ {
+            if timeInMin < 27/*Minutes*/ {
                 self.updateInterruptionInAudioPlayingCounts()
             } else {
                 audioPlayer.stop()
@@ -207,10 +207,10 @@ class playerVC: UIViewController, AVAudioPlayerDelegate {
         //let ft = NSString(format: "%02d:%02d", fminutes,fseconds) as String
         //let pc = Double(currentTime)/Double(finalTime)
         //debugPrint(audioPlayer.volume)
-        debugPrint("SECONDS:::", currentTime)
-        debugPrint("MINUTES:::", minutes)
+       // debugPrint("SECONDS:::", currentTime)
+      //  debugPrint("MINUTES:::", minutes)
         timeInMin = minutes
-        if currentTime == 23*60 {
+        if currentTime == 27*60 { //2024
             updateAudioSuccessfullyFinishCounts()
         }
         debugPrint("Played Audio Time===\(playedAudioTime)")
@@ -220,11 +220,13 @@ class playerVC: UIViewController, AVAudioPlayerDelegate {
     
     //Update Adudio Files Successfully Finished Counts
     func updateAudioSuccessfullyFinishCounts() {
+        
         //For refresh/intialize offline data on change current day, week and month
           kAppDelegate.intializeAndLoadOfflineDataFromUserDefaults()
                 
 //        timer.invalidate()
         if playerVC.fileName == cfg.SK1FileName{
+            debugPrint("INSIDE updateAudioSuccessfullyFinishCounts")
             cfg.monthSK1 += 1
             cfg.weekSK1 += 1
             cfg.SK1 += 1
@@ -239,7 +241,7 @@ class playerVC: UIViewController, AVAudioPlayerDelegate {
         else if playerVC.fileName == cfg.SK3FileName{
             cfg.monthEng += 1
             cfg.weekEng += 1
-            cfg.Eng += 1
+            cfg.SK1 += 1
             cfg.dataStack2.append("\(getCurrentDate())|\(getCurrentDateTime())|SKL3")
         }
         else if playerVC.fileName == cfg.SK4FileName {
@@ -247,6 +249,7 @@ class playerVC: UIViewController, AVAudioPlayerDelegate {
             cfg.monthSK1 += 1
             cfg.weekSK1 += 1
             cfg.SK1 += 1
+            debugPrint("INSIDE updateAudioSuccessfullyFinishCounts SK4FileName")
             cfg.dataStack2.append("\(getCurrentDate())|\(getCurrentDateTime())|SKL1")
         }
         

@@ -1,0 +1,18 @@
+"/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/searchSortDummy/webServices.swift":
+  const-values: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/webServices.swiftconstvalues"
+  dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/webServices.d"
+  swift-dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/webServices.swiftdeps"
+  object: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/webServices.o"
+  diagnostics: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/webServices.dia"
+"/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/searchSortDummy/ReviewVC.swift":
+  object: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/ReviewVC.o"
+  dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/ReviewVC.d"
+  diagnostics: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/ReviewVC.dia"
+  const-values: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/ReviewVC.swiftconstvalues"
+  swift-dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/ReviewVC.swiftdeps"
+"/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/searchSortDummy/LoginVC.swift":
+  object: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/LoginVC.o"
+  swift-dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/LoginVC.swiftdeps"
+  dependencies: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/LoginVC.d"
+  diagnostics: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/LoginVC.dia"
+  const-values: "/Users/blossoming/SRMapp/Fromgit/SwarajIOS/SwarajIOS/build/searchSortDummy.build/Debug-iphoneos/searchSortDummy.build/Objects-normal/arm64/LoginVC.swiftconstvalues"
