@@ -149,7 +149,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
         if(cfg.weekSK1T == 6){
                 modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
         }else if(cfg.weekSK1T == 3){
-                modifiedTargetWeeklyCount = cfg.weekSK1T + 1 - cfg.weekSK1
+                modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
         }
         if(modifiedTargetWeeklyCount <= 0){
             alertDialog(header: "Alert", msg: "Target achieved, Come back next week.");
@@ -230,7 +230,7 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
        if(cfg.weekSK1T == 6){
                modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
        }else if(cfg.weekSK1T == 3){
-               modifiedTargetWeeklyCount = cfg.weekSK1T + 1 - cfg.weekSK1
+               modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
        }
        if(modifiedTargetWeeklyCount <= 0){
            alertDialog(header: "Alert", msg: "Target achieved, Come back next week.");
