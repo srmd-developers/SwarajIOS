@@ -145,6 +145,8 @@ class dashboardVC: UIViewController, webServicesDelegate, URLSessionDownloadDele
     }
     
     @IBAction func btnSK1Action(_ sender: Any) {
+         playerVC.fileName = cfg.SK1FileName
+        
          var modifiedTargetWeeklyCount = 0;
         if(cfg.weekSK1T == 6){
                 modifiedTargetWeeklyCount = cfg.weekSK1T + 2 - cfg.weekSK1
